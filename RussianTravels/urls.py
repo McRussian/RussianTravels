@@ -1,4 +1,5 @@
-from RussianTravels.Views.example import HelloWorld
+from RussianTravels.Views.example import HelloWorld, MainPage
+from RussianTravels.Urls.Person import urls as person
 
 """RussianTravels URL Configuration
 
@@ -16,10 +17,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path, re_path
 
 urlpatterns = [
-
+    re_path('^$', MainPage),
     path('admin/', admin.site.urls),
-    path('hello/', HelloWorld)
+    re_path('^hello/$', HelloWorld),
+    re_path('^person/', include(person))
 ]
