@@ -1,3 +1,5 @@
+from RussianTravels.Views.example import HelloWorld
+
 """RussianTravels URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,5 +19,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
+    path('hello/', HelloWorld)
 ]
