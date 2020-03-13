@@ -3,6 +3,20 @@
 
 RussianTravels/__pycache__/
 
-RussianTravels/Views/__pycache__/
+RussianTravels/MainViews/__pycache__/
 
-RussianTravels/Views/Person/__pycache__/
+RussianTravels/MainViews/Person/__pycache__/
+
+RussianTravels/Person/Urls/__pycache__/
+
+RussianTravels/Person/Urls/Person/__pycache__/
+
+RussianTravels/Person/__pycache__/
+
+RussianTravels/Person/Views/__pycache__/
+
+RussianTravels/Routes/__pycache__/
+
+RussianTravels/Routes/Urls/__pycache__/
+
+RussianTravels/Routes/Views/__pycache__/

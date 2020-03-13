@@ -1,5 +1,6 @@
-from RussianTravels.Views.example import HelloWorld, MainPage
-from RussianTravels.Urls.Person import urls as person
+from RussianTravels.MainViews.view import HelloWorld, MainPage
+from RussianTravels.Person.Urls import urls as person
+from RussianTravels.Routes.Urls import urls as route
 
 """RussianTravels URL Configuration
 
@@ -23,5 +24,6 @@ urlpatterns = [
     re_path('^$', MainPage),
     path('admin/', admin.site.urls),
     re_path('^hello/$', HelloWorld),
-    re_path('^person/', include(person))
+    re_path('^person/', include(person)),
+    re_path('^route/', include(route))
 ]
